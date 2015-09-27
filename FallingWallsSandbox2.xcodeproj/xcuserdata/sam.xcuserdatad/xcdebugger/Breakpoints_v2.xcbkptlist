@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FallingWallsSandbox2/BCBeacon.swift"
-            timestampString = "462377827.095827"
+            timestampString = "463069285.534783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "update(_:)"
             landmarkType = "5">
          </BreakpointContent>

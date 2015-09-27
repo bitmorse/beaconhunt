@@ -31,7 +31,18 @@ beacons.draw(CALayer)  //add all beacons to a CALayer of choice
 
 class BCBeacon {
     var drawing_layer :CALayer;
-    var beacons = [Int: CALayer]()
+    var beacons = [Int: CALayer]();
+    
+    //===== KALMAN FILTER =====
+    let scalar_kalman = ScalarKalman();
+    var F = Double(1.0);
+    var H = Double(1.0);
+    var p = Double(1000);
+    var x = Double(0);
+    var r = Double(0.1);
+    var q = Double(1.0);
+    var K = Double(0.0);
+    
     
     init(drawing_layer: CALayer) {
         self.drawing_layer  = drawing_layer
@@ -67,6 +78,19 @@ class BCBeacon {
         let ratio_lin = pow(10, Double(Double(ratio_db)/10.0))
         
         let radius = sqrt(ratio_lin);
+        
+        
+        //KALMAN
+        x = scalar_kalman.predict_x(x,F: F);
+        
+    
+        p = scalar_kalman.predict_p(p,F: F,q: q);
+        K = scalar_kalman.update_K(p,H: H,r: r);
+        x = scalar_kalman.update_x(x,K: K,H: H,y: Double(rssi));
+        p = scalar_kalman.update_p(K,H: H,p: p);
+
+        NSLog("kalman %d", x);
+        
         
 /* let avg_rssi = MovingAverage(period: 30);
 
@@ -138,7 +162,7 @@ NSLog("%f", current2);
             // now val is not nil and the Optional has been unwrapped, so use it
             
             //update beacon and orbit layer
-           // orbit_sub = layer.sublayers.first as! CALayer; //the orbit
+            // orbit_sub = layer.sublayers.first as! CALayer; //the orbit
             // beacon_sub = layer.sublayers.last as! CALayer; //the beacon
             
             

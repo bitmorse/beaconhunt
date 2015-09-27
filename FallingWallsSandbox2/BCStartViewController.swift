@@ -199,7 +199,6 @@ class BCStartViewController: UIViewController, CLLocationManagerDelegate {
         lm!.startUpdatingLocation()
         // =============== BEACON SETUP ===============
 
-
         
         
         
@@ -250,19 +249,20 @@ class BCStartViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    //compass event handler
+    //compass event handler, currently not needed
+    /*
     func locationManager(manager: CLLocationManager!, didUpdateHeading newHeading: CLHeading!) {
         
         //NSLog("mag %d", newHeading.trueHeading);
+        
         
         let direction = CLLocationDirection(newHeading.trueHeading);
         let rad = CGFloat(-direction / 180.0 * M_PI);
         let rotation = CGAffineTransformMakeRotation(rad);
         
         orbit_layer.setAffineTransform(rotation);
-        
     }
-    
+    */
     
     
     //beacon handler
@@ -270,13 +270,8 @@ class BCStartViewController: UIViewController, CLLocationManagerDelegate {
         println(beacons)
         
         for (bNum, b) in enumerate(beacons) {
-            
             beacon_canvas.update(b as! CLBeacon);
-
-            
         }
-        
-        
     }
 
  
