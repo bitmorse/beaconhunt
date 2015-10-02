@@ -18,6 +18,7 @@
 		220F73761B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */; };
 		220F73781B8DF912000A40BB /* MovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73771B8DF912000A40BB /* MovingAverage.swift */; };
 		220F737A1B8F10D9000A40BB /* BCBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73791B8F10D9000A40BB /* BCBeacon.swift */; };
+		227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2271389F1BB8544000562D25 /* BCBeaconData.swift */; settings = {ASSET_TAGS = (); }; };
 		228514C41B99DB7700713DD3 /* ScalarKalman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228514C31B99DB7700713DD3 /* ScalarKalman.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCIntroOnceOnlyViewController.swift; sourceTree = "<group>"; };
 		220F73771B8DF912000A40BB /* MovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverage.swift; sourceTree = "<group>"; };
 		220F73791B8F10D9000A40BB /* BCBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBeacon.swift; sourceTree = "<group>"; };
+		2271389F1BB8544000562D25 /* BCBeaconData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBeaconData.swift; sourceTree = "<group>"; };
 		228514C31B99DB7700713DD3 /* ScalarKalman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarKalman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				220F736F1B8DC160000A40BB /* BCSabotageViewController.swift */,
 				220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */,
 				220F73791B8F10D9000A40BB /* BCBeacon.swift */,
+				2271389F1BB8544000562D25 /* BCBeaconData.swift */,
 				220F73771B8DF912000A40BB /* MovingAverage.swift */,
 				228514C31B99DB7700713DD3 /* ScalarKalman.swift */,
 				220F73531B8D0B57000A40BB /* Main.storyboard */,
@@ -174,8 +177,9 @@
 		220F733F1B8D0B57000A40BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ethz;
 				TargetAttributes = {
 					220F73461B8D0B57000A40BB = {
@@ -235,6 +239,7 @@
 				220F737A1B8F10D9000A40BB /* BCBeacon.swift in Sources */,
 				220F73521B8D0B57000A40BB /* BCStartViewController.swift in Sources */,
 				220F73781B8DF912000A40BB /* MovingAverage.swift in Sources */,
+				227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */,
 				220F73501B8D0B57000A40BB /* FallingWallsSandbox2.xcdatamodeld in Sources */,
 				220F73761B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift in Sources */,
 				220F734D1B8D0B57000A40BB /* AppDelegate.swift in Sources */,
@@ -302,6 +307,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -370,8 +376,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FallingWallsSandbox2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.BeaconHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -383,8 +391,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FallingWallsSandbox2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.BeaconHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -402,6 +412,7 @@
 				);
 				INFOPLIST_FILE = FallingWallsSandbox2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ethz.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallingWallsSandbox2.app/FallingWallsSandbox2";
 			};
@@ -417,6 +428,7 @@
 				);
 				INFOPLIST_FILE = FallingWallsSandbox2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ethz.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallingWallsSandbox2.app/FallingWallsSandbox2";
 			};

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Start View Controller-->
@@ -17,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BEACON HUNT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exB-ga-gTt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BEACON HUNT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exB-ga-gTt">
                                 <rect key="frame" x="16" y="24" width="297" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y7q-cP-LAP"/>
@@ -51,17 +53,7 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOU" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-b0-I7F">
-                                <rect key="frame" x="270" y="565" width="61" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="CUw-KR-2pu"/>
-                                    <constraint firstAttribute="height" constant="30" id="XIC-LL-8RN"/>
-                                </constraints>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbZ-S6-E5K">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbZ-S6-E5K">
                                 <rect key="frame" x="209" y="438" width="182" height="57"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="2"/>
@@ -82,20 +74,24 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sabotageButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mVb-6g-qM1"/>
                                     <segue destination="wnu-BS-8BA" kind="presentation" id="Y4z-pE-yNs"/>
                                 </connections>
                             </button>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOU" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-b0-I7F">
+                                <rect key="frame" x="269" y="358" width="61" height="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3ee-b0-I7F" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KEt-e4-1Qk"/>
                             <constraint firstItem="exB-ga-gTt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Z1X-3c-O5e"/>
                             <constraint firstItem="JTf-Ho-a4P" firstAttribute="top" secondItem="exB-ga-gTt" secondAttribute="bottom" constant="18" id="Zb8-cV-2ZI"/>
-                            <constraint firstItem="3ee-b0-I7F" firstAttribute="top" secondItem="LbZ-S6-E5K" secondAttribute="bottom" constant="70" id="afT-fI-HX4"/>
+                            <constraint firstItem="3ee-b0-I7F" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="1.5" id="hK4-dm-I62"/>
                             <constraint firstItem="exB-ga-gTt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="hov-xK-Z06"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3ee-b0-I7F" secondAttribute="bottom" constant="5" id="iOQ-Ms-Vjm"/>
                             <constraint firstAttribute="centerX" secondItem="LbZ-S6-E5K" secondAttribute="centerX" id="qcw-he-Xih"/>
-                            <constraint firstAttribute="centerX" secondItem="3ee-b0-I7F" secondAttribute="centerX" id="udS-9U-KP8"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -226,7 +222,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopSabotageButtonAction:" destination="wnu-BS-8BA" eventType="touchUpInside" id="AjL-DK-6Rf"/>
+                                    <action selector="stopSabotageButtonAction:" destination="wnu-BS-8BA" eventType="touchUpInside" id="F4f-hF-nAz"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stop to join the hunt again." textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-PE-atI">
