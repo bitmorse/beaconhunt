@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "44E68CDD78473EDE80993F81C2B54015FE0E066A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "44E68CDD78473EDE80993F81C2B54015FE0E066A" : 0,
+    "23E1215747CC507DB66740642919D35CB5B6A43C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7C8C9691-9910-494B-B1BF-7CB672750CDE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "44E68CDD78473EDE80993F81C2B54015FE0E066A" : "BeaconHunt",
+    "23E1215747CC507DB66740642919D35CB5B6A43C" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BeaconHunt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BeaconHunt.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bitmorse\/beaconhunt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23E1215747CC507DB66740642919D35CB5B6A43C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bitmorse\/beaconhunt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44E68CDD78473EDE80993F81C2B54015FE0E066A"
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220F734D1B8D0B57000A40BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F734C1B8D0B57000A40BB /* AppDelegate.swift */; };
+		220F73501B8D0B57000A40BB /* BeaconHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220F734E1B8D0B57000A40BB /* BeaconHunt.xcdatamodeld */; };
+		220F73521B8D0B57000A40BB /* BCStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73511B8D0B57000A40BB /* BCStartViewController.swift */; };
+		220F73551B8D0B57000A40BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220F73531B8D0B57000A40BB /* Main.storyboard */; };
+		220F73571B8D0B57000A40BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220F73561B8D0B57000A40BB /* Images.xcassets */; };
+		220F73701B8DC160000A40BB /* BCSabotageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F736F1B8DC160000A40BB /* BCSabotageViewController.swift */; };
+		220F73761B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */; };
+		220F73781B8DF912000A40BB /* MovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73771B8DF912000A40BB /* MovingAverage.swift */; };
+		220F737A1B8F10D9000A40BB /* BCBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73791B8F10D9000A40BB /* BCBeacon.swift */; };
+		227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2271389F1BB8544000562D25 /* BCBeaconData.swift */; settings = {ASSET_TAGS = (); }; };
+		228514C41B99DB7700713DD3 /* ScalarKalman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228514C31B99DB7700713DD3 /* ScalarKalman.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220F73601B8D0B57000A40BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220F733F1B8D0B57000A40BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220F73461B8D0B57000A40BB;
+			remoteInfo = BeaconHunt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220F73471B8D0B57000A40BB /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220F734B1B8D0B57000A40BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220F734C1B8D0B57000A40BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		220F734F1B8D0B57000A40BB /* BeaconHunt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconHunt.xcdatamodel; sourceTree = "<group>"; };
+		220F73511B8D0B57000A40BB /* BCStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCStartViewController.swift; sourceTree = "<group>"; };
+		220F73541B8D0B57000A40BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		220F73561B8D0B57000A40BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		220F735F1B8D0B57000A40BB /* TreasureHunt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHunt.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220F736F1B8DC160000A40BB /* BCSabotageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCSabotageViewController.swift; sourceTree = "<group>"; };
+		220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCIntroOnceOnlyViewController.swift; sourceTree = "<group>"; };
+		220F73771B8DF912000A40BB /* MovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverage.swift; sourceTree = "<group>"; };
+		220F73791B8F10D9000A40BB /* BCBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBeacon.swift; sourceTree = "<group>"; };
+		2271389F1BB8544000562D25 /* BCBeaconData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBeaconData.swift; sourceTree = "<group>"; };
+		228514C31B99DB7700713DD3 /* ScalarKalman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarKalman.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220F73441B8D0B57000A40BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220F735C1B8D0B57000A40BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220F733E1B8D0B57000A40BB = {
+			isa = PBXGroup;
+			children = (
+				220F73491B8D0B57000A40BB /* TreasureHunt */,
+				220F73481B8D0B57000A40BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		220F73481B8D0B57000A40BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220F73471B8D0B57000A40BB /* TreasureHunt.app */,
+				220F735F1B8D0B57000A40BB /* TreasureHunt.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220F73491B8D0B57000A40BB /* TreasureHunt */ = {
+			isa = PBXGroup;
+			children = (
+				220F734C1B8D0B57000A40BB /* AppDelegate.swift */,
+				220F73511B8D0B57000A40BB /* BCStartViewController.swift */,
+				220F736F1B8DC160000A40BB /* BCSabotageViewController.swift */,
+				220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */,
+				220F73791B8F10D9000A40BB /* BCBeacon.swift */,
+				2271389F1BB8544000562D25 /* BCBeaconData.swift */,
+				220F73771B8DF912000A40BB /* MovingAverage.swift */,
+				228514C31B99DB7700713DD3 /* ScalarKalman.swift */,
+				220F73531B8D0B57000A40BB /* Main.storyboard */,
+				220F73561B8D0B57000A40BB /* Images.xcassets */,
+				220F734E1B8D0B57000A40BB /* BeaconHunt.xcdatamodeld */,
+				220F734A1B8D0B57000A40BB /* Supporting Files */,
+			);
+			name = TreasureHunt;
+			path = BeaconHunt;
+			sourceTree = "<group>";
+		};
+		220F734A1B8D0B57000A40BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				220F734B1B8D0B57000A40BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220F73461B8D0B57000A40BB /* TreasureHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220F73691B8D0B57000A40BB /* Build configuration list for PBXNativeTarget "TreasureHunt" */;
+			buildPhases = (
+				220F73431B8D0B57000A40BB /* Sources */,
+				220F73441B8D0B57000A40BB /* Frameworks */,
+				220F73451B8D0B57000A40BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreasureHunt;
+			productName = BeaconHunt;
+			productReference = 220F73471B8D0B57000A40BB /* TreasureHunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220F735E1B8D0B57000A40BB /* TreasureHuntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220F736C1B8D0B57000A40BB /* Build configuration list for PBXNativeTarget "TreasureHuntTests" */;
+			buildPhases = (
+				220F735B1B8D0B57000A40BB /* Sources */,
+				220F735C1B8D0B57000A40BB /* Frameworks */,
+				220F735D1B8D0B57000A40BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220F73611B8D0B57000A40BB /* PBXTargetDependency */,
+			);
+			name = TreasureHuntTests;
+			productName = BeaconHuntTests;
+			productReference = 220F735F1B8D0B57000A40BB /* TreasureHunt.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220F733F1B8D0B57000A40BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ethz;
+				TargetAttributes = {
+					220F73461B8D0B57000A40BB = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5R8S596684;
+					};
+					220F735E1B8D0B57000A40BB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 220F73461B8D0B57000A40BB;
+					};
+				};
+			};
+			buildConfigurationList = 220F73421B8D0B57000A40BB /* Build configuration list for PBXProject "TreasureHunt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220F733E1B8D0B57000A40BB;
+			productRefGroup = 220F73481B8D0B57000A40BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220F73461B8D0B57000A40BB /* TreasureHunt */,
+				220F735E1B8D0B57000A40BB /* TreasureHuntTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220F73451B8D0B57000A40BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220F73551B8D0B57000A40BB /* Main.storyboard in Resources */,
+				220F73571B8D0B57000A40BB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220F735D1B8D0B57000A40BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220F73431B8D0B57000A40BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220F737A1B8F10D9000A40BB /* BCBeacon.swift in Sources */,
+				220F73521B8D0B57000A40BB /* BCStartViewController.swift in Sources */,
+				220F73781B8DF912000A40BB /* MovingAverage.swift in Sources */,
+				227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */,
+				220F73501B8D0B57000A40BB /* BeaconHunt.xcdatamodeld in Sources */,
+				220F73761B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift in Sources */,
+				220F734D1B8D0B57000A40BB /* AppDelegate.swift in Sources */,
+				220F73701B8DC160000A40BB /* BCSabotageViewController.swift in Sources */,
+				228514C41B99DB7700713DD3 /* ScalarKalman.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220F735B1B8D0B57000A40BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220F73611B8D0B57000A40BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220F73461B8D0B57000A40BB /* TreasureHunt */;
+			targetProxy = 220F73601B8D0B57000A40BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		220F73531B8D0B57000A40BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220F73541B8D0B57000A40BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		220F73671B8D0B57000A40BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220F73681B8D0B57000A40BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220F736A1B8D0B57000A40BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = BeaconHunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.TreasureHunt;
+				PRODUCT_NAME = TreasureHunt;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		220F736B1B8D0B57000A40BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BeaconHunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.TreasureHunt;
+				PRODUCT_NAME = TreasureHunt;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		220F736D1B8D0B57000A40BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeaconHuntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ethz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TreasureHunt;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureHunt.app/TreasureHunt";
+			};
+			name = Debug;
+		};
+		220F736E1B8D0B57000A40BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeaconHuntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.ethz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TreasureHunt;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureHunt.app/TreasureHunt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220F73421B8D0B57000A40BB /* Build configuration list for PBXProject "TreasureHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220F73671B8D0B57000A40BB /* Debug */,
+				220F73681B8D0B57000A40BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220F73691B8D0B57000A40BB /* Build configuration list for PBXNativeTarget "TreasureHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220F736A1B8D0B57000A40BB /* Debug */,
+				220F736B1B8D0B57000A40BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220F736C1B8D0B57000A40BB /* Build configuration list for PBXNativeTarget "TreasureHuntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220F736D1B8D0B57000A40BB /* Debug */,
+				220F736E1B8D0B57000A40BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		220F734E1B8D0B57000A40BB /* BeaconHunt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				220F734F1B8D0B57000A40BB /* BeaconHunt.xcdatamodel */,
+			);
+			currentVersion = 220F734F1B8D0B57000A40BB /* BeaconHunt.xcdatamodel */;
+			path = BeaconHunt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 220F733F1B8D0B57000A40BB /* Project object */;
+}
