@@ -16,7 +16,7 @@
 		220F73761B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73751B8DCA2A000A40BB /* BCIntroOnceOnlyViewController.swift */; };
 		220F73781B8DF912000A40BB /* MovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73771B8DF912000A40BB /* MovingAverage.swift */; };
 		220F737A1B8F10D9000A40BB /* BCBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F73791B8F10D9000A40BB /* BCBeacon.swift */; };
-		227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2271389F1BB8544000562D25 /* BCBeaconData.swift */; settings = {ASSET_TAGS = (); }; };
+		227138A01BB8544000562D25 /* BCBeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2271389F1BB8544000562D25 /* BCBeaconData.swift */; };
 		228514C41B99DB7700713DD3 /* ScalarKalman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228514C31B99DB7700713DD3 /* ScalarKalman.swift */; };
 /* End PBXBuildFile section */
 
@@ -344,7 +344,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = BeaconHunt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.TreasureHunt;
 				PRODUCT_NAME = TreasureHunt;
@@ -361,7 +361,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeaconHunt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.TreasureHunt;
 				PRODUCT_NAME = TreasureHunt;

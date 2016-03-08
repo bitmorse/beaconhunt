@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -21,7 +20,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TREASURE HUNT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exB-ga-gTt">
                                 <rect key="frame" x="16" y="24" width="297" height="37"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y7q-cP-LAP"/>
                                     <constraint firstAttribute="width" constant="297" id="sv1-Ef-2rP"/>
@@ -32,35 +30,30 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Move around!" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-N0-Xql">
                                 <rect key="frame" x="0.0" y="72" width="178" height="30"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The distance will get" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="LQs-oy-TIp">
                                 <rect key="frame" x="0.0" y="110" width="242" height="30"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="smaller as you get closer" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-0T-ZPq">
                                 <rect key="frame" x="0.0" y="148" width="282" height="30"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="to finding the treasure." textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="iZi-h0-Xhb">
                                 <rect key="frame" x="0.0" y="186" width="265" height="31"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbZ-S6-E5K">
                                 <rect key="frame" x="209" y="438" width="182" height="57"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="2"/>
                                 <state key="normal" title="START" image="blackbg" backgroundImage="blackbg">
@@ -73,7 +66,6 @@
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTf-Ho-a4P">
                                 <rect key="frame" x="16" y="72" width="185" height="57"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="2"/>
                                 <state key="normal" title="SABOTAGE" image="blackbg" backgroundImage="blackbg">
@@ -86,14 +78,12 @@
                             </button>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOU" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-b0-I7F">
                                 <rect key="frame" x="269" y="358" width="61" height="30"/>
-                                <animations/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="kkE-6x-4Nh">
                                 <rect key="frame" x="0.0" y="515" width="600" height="85"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.28235294119999998" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -104,7 +94,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kkE-6x-4Nh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="5UR-wb-uP6"/>
@@ -151,28 +140,24 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Treasure Hunt requires" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="IDm-O5-gaT">
                                 <rect key="frame" x="56" y="57" width="269" height="41"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Location Sharing" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="0dv-fK-nbE">
                                 <rect key="frame" x="56" y="104" width="208" height="41"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bluetooth" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-7H-4fA">
                                 <rect key="frame" x="56" y="153" width="132" height="41"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="yLP-VV-R98">
                                 <rect key="frame" x="272" y="106" width="35" height="35"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="iec-pj-50C"/>
                                     <constraint firstAttribute="width" constant="35" id="r0h-W2-6l1"/>
@@ -180,7 +165,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="e17-w4-hoA">
                                 <rect key="frame" x="196" y="156" width="36" height="35"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="cFZ-XD-Yyr"/>
                                     <constraint firstAttribute="height" constant="35" id="q7q-t8-9v1"/>
@@ -188,7 +172,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR0-EY-vYf">
                                 <rect key="frame" x="175" y="523" width="251" height="57"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="2"/>
                                 <state key="normal" title="GOT IT" image="blackbg" backgroundImage="blackbg">
@@ -200,7 +183,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="jR0-EY-vYf" secondAttribute="centerX" id="6W6-f1-AkN"/>
@@ -231,28 +213,24 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You are now interfering" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-QS-WIt">
                                 <rect key="frame" x="320" y="160" width="280" height="31"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" with other players " textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="68G-2q-PJj">
                                 <rect key="frame" x="370" y="199" width="230" height="31"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="treasure antennas!" textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="oJD-nE-MKI">
                                 <rect key="frame" x="378" y="238" width="222" height="31"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-od-WMT">
                                 <rect key="frame" x="16" y="53" width="251" height="57"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="2"/>
                                 <state key="normal" title="STOP SABOTAGE" image="blackbg" backgroundImage="blackbg">
@@ -265,13 +243,11 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Stop to join the hunt again." textAlignment="center" minimumFontSize="17" background="orangebg" disabledBackground="orangebg" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-PE-atI">
                                 <rect key="frame" x="285" y="277" width="315" height="31"/>
-                                <animations/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9Fd-od-WMT" firstAttribute="top" secondItem="x7y-9x-Bvh" secondAttribute="bottom" constant="53" id="5Xx-4l-9Wo"/>

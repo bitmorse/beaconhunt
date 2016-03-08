@@ -177,7 +177,7 @@ class BCStartViewController: UIViewController, CLLocationManagerDelegate {
     let orbit_layer = CALayer();
     let defaults = NSUserDefaults.standardUserDefaults()
     var app_just_opened = 1;
-    var venue_text = "Are you at Falling Walls?";
+    var venue_text = "Did the hunt start yet?";
 
     
     override func viewDidLoad() {
